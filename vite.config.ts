@@ -5,7 +5,8 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: ['csp.svg', 'robots.txt', ],
+      injectRegister: 'auto',
       manifest: {
         name: 'csp',
         short_name: 'csp',
