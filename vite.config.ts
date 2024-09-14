@@ -21,7 +21,7 @@ export default defineConfig({
             type: 'image/png',
           },
           {
-            src: 'csp.png',
+            src: 'C.png',
             sizes: '512x512',
             type: 'image/png',
           },
