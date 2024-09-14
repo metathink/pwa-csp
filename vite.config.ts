@@ -16,7 +16,7 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'csp.png',
+            src: 'https://pwa-csp.vercel.app/csp.png',
             sizes: '192x192',
             type: 'image/png',
           },
