@@ -7,16 +7,18 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['csp.svg', 'robots.txt', ],
+      includeAssets: ['csp.svg', 'robots.txt',],
       injectRegister: 'auto',
       manifest: {
         name: 'csp',
         short_name: 'csp',
         description: 'csp',
+        start_url: "/",
+        display: "standalone",
         theme_color: '#ffffff',
         icons: [
           {
-            src: 'https://pwa-csp.vercel.app/csp.png',
+            src: 'csp.png',
             sizes: '192x192',
             type: 'image/png',
           },
@@ -25,7 +27,7 @@ export default defineConfig({
             sizes: '512x512',
             type: 'image/png',
           },
-          
+
         ],
       },
     }),
